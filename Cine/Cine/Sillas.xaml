@@ -1,0 +1,119 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Cine.Sillas"
+             BackgroundColor="#54687a"
+            >
+    
+
+    <Grid  RowSpacing="0"
+          ColumnSpacing="0" x:Name="pos">
+         
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+
+        <Image Source="intro.gif" Grid.Column="2" Grid.Row="0" HorizontalOptions="CenterAndExpand" Grid.ColumnSpan="10"  Grid.RowSpan="20" IsAnimationPlaying="True" />
+
+        <Image Source="sillaroja.png" Grid.Column="0" Grid.Row="1" />
+        <Image Source="sillaverde.png" Grid.Column="0" Grid.Row="2" />
+        <Image Source="sillaverde.png" Grid.Column="0" Grid.Row="3" />
+        <Image Source="sillaroja.png" Grid.Column="0" Grid.Row="4" />
+        <Image Source="sillaverde.png" Grid.Column="0" Grid.Row="5" />
+        <Image Source="sillaroja.png" Grid.Column="1" Grid.Row="1" />
+        <Image Source="sillaroja.png" Grid.Column="1" Grid.Row="2" />
+        <Image Source="sillaroja.png" Grid.Column="1" Grid.Row="3" />
+        <Image Source="sillaverde.png" Grid.Column="1" Grid.Row="4" />
+        <Image Source="sillaverde.png" Grid.Column="1" Grid.Row="5" />    
+
+        <Image Source="sillaverde.png" Grid.Column="2" Grid.Row="1" />
+        <Image Source="sillaverde.png" Grid.Column="2" Grid.Row="2" />
+        <Image Source="sillaroja.png" Grid.Column="2" Grid.Row="3" />
+        <Image Source="sillaroja.png" Grid.Column="2" Grid.Row="4" />
+        <Image Source="sillaverde.png" Grid.Column="2" Grid.Row="5" />
+        <Image Source="sillaverde.png" Grid.Column="3" Grid.Row="1" />
+        <Image Source="sillaroja.png" Grid.Column="3" Grid.Row="2" />
+        <Image Source="sillaroja.png" Grid.Column="3" Grid.Row="3" />
+        <Image Source="sillaverde.png" Grid.Column="3" Grid.Row="4" />
+        <Image Source="sillaverde.png" Grid.Column="3" Grid.Row="5" />
+
+        <Image Source="sillaverde.png" Grid.Column="5" Grid.Row="1" />
+        <Image Source="sillaverde.png" Grid.Column="5" Grid.Row="2" />
+        <Image Source="sillaverde.png" Grid.Column="5" Grid.Row="3" />
+        <Image Source="sillaverde.png" Grid.Column="5" Grid.Row="4" />
+        <Image Source="sillaroja.png" Grid.Column="5" Grid.Row="5" />
+        <Image Source="sillaverde.png" Grid.Column="6" Grid.Row="1" />
+        <Image Source="sillaroja.png" Grid.Column="6" Grid.Row="2" />
+        <Image Source="sillaroja.png" Grid.Column="6" Grid.Row="3" />
+        <Image Source="sillaverde.png" Grid.Column="6" Grid.Row="4" />
+        <Image Source="sillaverde.png" Grid.Column="6" Grid.Row="5" />
+
+        <Image Source="sillaverde.png" Grid.Column="7" Grid.Row="1" />
+        <Image Source="sillaverde.png" Grid.Column="7" Grid.Row="2" />
+        <Image Source="sillaroja.png" Grid.Column="7" Grid.Row="3" />
+        <Image Source="sillaverde.png" Grid.Column="7" Grid.Row="4" />
+        <Image Source="sillaroja.png" Grid.Column="7" Grid.Row="5" />
+        <Image Source="sillaverde.png" Grid.Column="8" Grid.Row="1" />
+        <Image Source="sillaverde.png" Grid.Column="8" Grid.Row="2" />
+        <Image Source="sillaroja.png" Grid.Column="8" Grid.Row="3" />
+        <Image Source="sillaroja.png" Grid.Column="8" Grid.Row="4" />
+        <Image Source="sillaverde.png" Grid.Column="8" Grid.Row="5" />
+
+        <Image Source="sillaverde.png" Grid.Column="10" Grid.Row="1" />
+        <Image Source="sillaverde.png" Grid.Column="10" Grid.Row="2" />
+        <Image Source="sillaverde.png" Grid.Column="10" Grid.Row="3" />
+        <Image Source="sillaverde.png" Grid.Column="10" Grid.Row="4" />
+        <Image Source="sillaroja.png" Grid.Column="10" Grid.Row="5" />
+        <Image Source="sillaroja.png" Grid.Column="11" Grid.Row="1" />
+        <Image Source="sillaverde.png" Grid.Column="11" Grid.Row="2" />
+        <Image Source="sillaroja.png" Grid.Column="11" Grid.Row="3" />
+        <Image Source="sillaverde.png" Grid.Column="11" Grid.Row="4" />
+        <Image Source="sillaverde.png" Grid.Column="11" Grid.Row="5" />
+
+        <Image Source="sillaverde.png" Grid.Column="12" Grid.Row="1" />
+        <Image Source="sillaverde.png" Grid.Column="12" Grid.Row="2" />
+        <Image Source="sillaroja.png" Grid.Column="12" Grid.Row="3" />
+        <Image Source="sillaroja.png" Grid.Column="12" Grid.Row="4" />
+        <Image Source="sillaverde.png" Grid.Column="12" Grid.Row="5" />
+        <Image Source="sillaverde.png" Grid.Column="13" Grid.Row="1" />
+        <Image Source="sillaroja.png" Grid.Column="13" Grid.Row="2" />
+        <Image Source="sillaroja.png" Grid.Column="13" Grid.Row="3" />
+        <Image Source="sillaroja.png" Grid.Column="13" Grid.Row="4" />
+        <Image Source="sillaverde.png" Grid.Column="13" Grid.Row="5" />
+
+       
+        <Label Text="          A                                       B                                  C" TextColor="White" Grid.Column="0" Grid.Row="0" VerticalOptions="FillAndExpand" Grid.ColumnSpan="14"  Grid.RowSpan="20"></Label>
+       
+    </Grid>
+    
+</ContentPage>

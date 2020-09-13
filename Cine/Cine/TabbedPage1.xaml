@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:Cine="clr-namespace:Cine"
+             mc:Ignorable="d"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core" xmlns:Cine1="clr-namespace:Cine.Models"
+            BarBackgroundColor="#54687a"
+             x:Class="Cine.TabbedPage1"
+    >
+  <!--Pages can be added as references or inline-->
+
+    <Cine:Pelicula IconImageSource="ic_cine.png"  ></Cine:Pelicula>
+    <Cine:Comidas IconImageSource="ic_comida.png" ></Cine:Comidas>
+    <Cine:Compras IconImageSource="ic_buy.png"  ></Cine:Compras>
+    <Cine:Sillas IconImageSource="ic_silla.png"  ></Cine:Sillas>
+    <Cine:Login IconImageSource="ic_login.png"  ></Cine:Login>
+    
+</TabbedPage>

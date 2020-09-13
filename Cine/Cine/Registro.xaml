@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Cine.Registro"
+             BackgroundColor="#54687a"
+             NavigationPage.HasNavigationBar="true">
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="fondosala.jpg"
+               HeightRequest="250" Aspect="AspectFill" Opacity="0.2"/>
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid>
+                    
+                </Grid>
+                <StackLayout Grid.Row="1" Padding="30,20">
+                    <Label Text="Registro" TextColor="White" FontSize="Title"></Label>
+                    <Entry FontFamily="fontello" Placeholder="&#xE800; Nombre y Apellido" PlaceholderColor="WhiteSmoke" TextColor="White" Keyboard="Text"/>
+                    <Entry FontFamily="fontello" Placeholder="&#xE801; Telefono" PlaceholderColor="WhiteSmoke" TextColor="White" Keyboard="Telephone"/>
+                    <Entry FontFamily="fontello" Placeholder="&#xE800; Correo electronico" PlaceholderColor="WhiteSmoke" TextColor="White" Keyboard="Email"/>
+                    <Entry FontFamily="fontello" Placeholder="&#xE800; Ciudad" PlaceholderColor="WhiteSmoke" TextColor="White" Keyboard="Text"/>
+                    <Entry FontFamily="fontello" Placeholder="&#xE800; Direccion" PlaceholderColor="WhiteSmoke" TextColor="White" Keyboard="Text"/>
+                    <Entry FontFamily="fontello" Placeholder="&#xE801; Contraseña" PlaceholderColor="WhiteSmoke" IsPassword="True" TextColor="White"/>
+                    <Entry FontFamily="fontello" Placeholder="&#xE800; Confirme Contraseña" PlaceholderColor="WhiteSmoke" IsPassword="True" TextColor="White" />
+                    <Button Text="Registrarme" BackgroundColor="#c56f82" CornerRadius="5" TextColor="WhiteSmoke" FontSize="15"/>
+                    <Grid>
+
+                    </Grid>
+
+                    <Grid >
+                        <Image Source="icono.ico" />
+                    </Grid>
+                    
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

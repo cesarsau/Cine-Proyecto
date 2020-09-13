@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Cine.Pelicula"
+             BackgroundColor="#54687a">
+    
+    <CollectionView ItemsSource="{Binding Peliculas}" BackgroundColor="#54687a" Opacity="0.9">
+        <CollectionView.ItemTemplate BackgroundColor="#54687a" >
+            <DataTemplate >
+                <Frame BackgroundColor="#54687a" Padding="8"
+                       CornerRadius="5"
+                       IsClippedToBounds="True"
+                       BorderColor="LightBlue" >
+                    <Grid HeightRequest="100" BackgroundColor="#54687a" >
+                        <Grid.ColumnDefinitions BackgroundColor="#54687a">
+                            <ColumnDefinition Width=".3*"/>
+                            <ColumnDefinition Width=".7*"/> 
+                        </Grid.ColumnDefinitions >
+                        <Grid.RowDefinitions BackgroundColor="#54687a">
+                            <RowDefinition Height=".5*"/>
+                            <RowDefinition Height=".5*"/>
+                        </Grid.RowDefinitions>
+                        <ImageButton x:Name="btn1" BackgroundColor="#54687a" Grid.RowSpan="3" Source="{Binding Imagen}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  ></ImageButton>
+                        <Label x:Name="Nombre" Text="{Binding Nombre}" Grid.Column="1" FontAttributes="Bold" FontSize="Medium" TextColor="White" TextType="Html"></Label>
+                        <Label Grid.Row="1" Grid.Column="1" FontSize="Medium" Text="{Binding Año}" TextColor="White"></Label>
+                        <Label Grid.Row="2" Grid.Column="1" FontSize="Small" Text="{Binding Categoria}" TextColor="White"></Label>
+                        
+                    </Grid>                   
+
+                </Frame>               
+                
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+   
+</ContentPage>

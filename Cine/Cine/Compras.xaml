@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:Models="clr-namespace:Cine.Models"
+             mc:Ignorable="d"
+             x:Class="Cine.Compras"
+             BackgroundColor="#54687a"
+            
+             >
+
+    <Grid>
+
+        <Image Source="fondosala.jpg"
+               HeightRequest="250" Aspect="AspectFill" Opacity="0.2"/>
+
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="1"  HorizontalOptions="Center" Text="Bienvenidos a Compras" FontSize="Medium" TextColor="White"/>
+
+
+
+            <StackLayout Grid.Row="1" Padding="15,10">
+
+                <Grid />
+                <StackLayout Orientation="Horizontal"/>
+                <Label Grid.Row="1"  Text="Pelicula" TextColor="White" FontSize="16"/>
+                <Picker SelectedIndexChanged="Listado_SelectedIndexChanged" x:Name="Listado" FontSize="Small" HorizontalOptions="FillAndExpand" TextColor="GhostWhite" Title="Selecione Pelicula">
+
+                    <Picker.Items>
+                        <x:String>El Enemigo Invisible</x:String>
+                        <x:String>El Valor Del Trigo</x:String>
+                        <x:String>La Sirena</x:String>
+                        <x:String>El Beso</x:String>
+                        <x:String>Erase Un Tonto</x:String>
+                        <x:String>Amantes</x:String>
+                        <x:String>Tormento</x:String>
+                        <x:String>La Pantera Rosa</x:String>
+                        <x:String>Charlot, Artista De Cine</x:String>
+                        <x:String>Fuego</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Grid.Row="2"  Text="Fecha" TextColor="White" FontSize="16"/>
+                <DatePicker  x:Name="Fecha" FontSize="Small" HorizontalOptions="FillAndExpand" TextColor="GhostWhite" >
+
+                </DatePicker>
+                <Label Grid.Row="1"  Text="Hora" TextColor="White" FontSize="16"/>
+                <TimePicker x:Name="Hora" FontSize="Small" HorizontalOptions="FillAndExpand" TextColor="GhostWhite" >
+
+                </TimePicker>
+
+                <Label Grid.Row="1"  Text="Cantidad de asientos" TextColor="White" FontSize="16"/>
+                <Picker x:Name="Cantidad" SelectedIndexChanged="Cantidad_SelectedIndexChanged" FontSize="Small" HorizontalOptions="FillAndExpand" TextColor="GhostWhite" >
+                    <Picker.Items>
+                        <x:String>1</x:String>
+                        <x:String>2</x:String>
+                    </Picker.Items>
+                    
+                </Picker>
+
+                <Label x:Name="asiento" Grid.Row="3"  Text="Asiento 1" TextColor="White" FontSize="16"/>
+                <Picker  x:Name="Asiento" FontSize="Small" HorizontalOptions="FillAndExpand" TextColor="GhostWhite" Title="Seleccione Asiento 1">
+                    <Picker.Items>
+                        <x:String>A-1</x:String>
+                        <x:String>A-3</x:String>
+                        <x:String>A-4</x:String>
+                        <x:String>A-5</x:String>
+                        <x:String>A-7</x:String>
+                        <x:String>A-9</x:String>
+                        <x:String>A-14</x:String>
+                        <x:String>A-16</x:String>
+                        <x:String>A-17</x:String>
+                        <x:String>A-18</x:String>
+                        <x:String>A-19</x:String>
+                        <x:String>A-20</x:String>
+                        <x:String>B-1</x:String>
+                        <x:String>B-2</x:String>
+                        <x:String>B-3</x:String>
+                        <x:String>B-4</x:String>
+                        <x:String>B-5</x:String>
+                        <x:String>B-6</x:String>
+                        <x:String>B-7</x:String>
+                        <x:String>B-8</x:String>
+                        <x:String>B-9</x:String>
+                        <x:String>B-13</x:String>
+                        <x:String>B-15</x:String>
+                        <x:String>B-18</x:String>
+                        <x:String>B-20</x:String>
+                        <x:String>C-1</x:String>
+                        <x:String>C-3</x:String>
+                        <x:String>C-4</x:String>
+                        <x:String>C-5</x:String>
+                        <x:String>C-6</x:String>
+                        <x:String>C-7</x:String>
+                        <x:String>C-9</x:String>
+                        <x:String>C-13</x:String>
+                        <x:String>C-14</x:String>
+                        <x:String>C-18</x:String>
+                        <x:String>C-19</x:String>
+                        <x:String>C-20</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label x:Name="asiento2" Grid.Row="3"  Text="Asiento 2" TextColor="White" FontSize="16"/>
+                <Picker  x:Name="Asiento2"  FontSize="Small" HorizontalOptions="FillAndExpand" TextColor="GhostWhite" Title="Seleccione Asiento">
+                    <Picker.Items>
+                        <x:String>A-1</x:String>
+                        <x:String>A-3</x:String>
+                        <x:String>A-4</x:String>
+                        <x:String>A-5</x:String>
+                        <x:String>A-7</x:String>
+                        <x:String>A-9</x:String>
+                        <x:String>A-14</x:String>
+                        <x:String>A-16</x:String>
+                        <x:String>A-17</x:String>
+                        <x:String>A-18</x:String>
+                        <x:String>A-19</x:String>
+                        <x:String>A-20</x:String>
+                        <x:String>B-1</x:String>
+                        <x:String>B-2</x:String>
+                        <x:String>B-3</x:String>
+                        <x:String>B-4</x:String>
+                        <x:String>B-5</x:String>
+                        <x:String>B-6</x:String>
+                        <x:String>B-7</x:String>
+                        <x:String>B-8</x:String>
+                        <x:String>B-9</x:String>
+                        <x:String>B-13</x:String>
+                        <x:String>B-15</x:String>
+                        <x:String>B-18</x:String>
+                        <x:String>B-20</x:String>
+                        <x:String>C-1</x:String>
+                        <x:String>C-3</x:String>
+                        <x:String>C-4</x:String>
+                        <x:String>C-5</x:String>
+                        <x:String>C-6</x:String>
+                        <x:String>C-7</x:String>
+                        <x:String>C-9</x:String>
+                        <x:String>C-13</x:String>
+                        <x:String>C-14</x:String>
+                        <x:String>C-18</x:String>
+                        <x:String>C-19</x:String>
+                        <x:String>C-20</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Button x:Name ="entrar" Text="Comprar" BackgroundColor="#c56f82" CornerRadius="5" TextColor="WhiteSmoke" FontSize="18" Clicked="entrar_Clicked"/>
+
+            </StackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>
