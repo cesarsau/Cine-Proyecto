@@ -6,9 +6,7 @@
              xmlns:Models="clr-namespace:Cine.Models"
              mc:Ignorable="d"
              x:Class="Cine.Compras"
-             BackgroundColor="#54687a"
-            
-             >
+             BackgroundColor="#54687a">
 
     <Grid>
 
@@ -31,7 +29,7 @@
                 <Grid />
                 <StackLayout Orientation="Horizontal"/>
                 <Label Grid.Row="1"  Text="Pelicula" TextColor="White" FontSize="16"/>
-                <Picker SelectedIndexChanged="Listado_SelectedIndexChanged" x:Name="Listado" FontSize="Small" HorizontalOptions="FillAndExpand" TextColor="GhostWhite" Title="Selecione Pelicula">
+                <Picker SelectedIndexChanged="Listado_SelectedIndexChanged" x:Name="Listado" FontSize="Small" HorizontalOptions="FillAndExpand" TextColor="GhostWhite" Title="Selecione Pelicula" TitleColor="GhostWhite">
 
                     <Picker.Items>
                         <x:String>El Enemigo Invisible</x:String>

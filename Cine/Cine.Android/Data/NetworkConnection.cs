@@ -25,7 +25,5 @@ namespace Cine.Droid
                 IsConnected = false;
             }
         }
-
-
     }
 }

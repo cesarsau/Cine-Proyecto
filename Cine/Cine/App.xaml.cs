@@ -18,8 +18,7 @@ namespace Cine
         public App()
         {
             InitializeComponent();
-
-            MainPage =new NavigationPage(new TabbedPage1());
+            MainPage = new NavigationPage(new TabbedPage1());
             MainPage.SetValue(NavigationPage.BarBackgroundColorProperty, Color.White);
         }
 
@@ -51,7 +50,7 @@ namespace Cine
             }
         }
 
-        private static void CheckIfInternetOverTime()
+        public static void CheckIfInternetOverTime()
         {
             var NetworkConnection = DependencyService.Get<INetworkConnection>();
             NetworkConnection.CheckNetworkConnection();
@@ -80,7 +79,7 @@ namespace Cine
             }
         }
 
-        public static async Task<bool> CheckIfInternet()
+        public static bool CheckIfInternet()
         {
             var NetworkConnection = DependencyService.Get<INetworkConnection>();
             NetworkConnection.CheckNetworkConnection();
@@ -102,7 +101,7 @@ namespace Cine
             return true;
         }
 
-        private static async Task ShowDisplayAlert()
+        public static async Task ShowDisplayAlert()
         {
             NoInterShow = false;
             await CurrentPage.DisplayAlert("Internet", "Device has no Internet, please reconnect", "Okay");

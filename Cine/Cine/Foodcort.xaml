@@ -18,7 +18,7 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-            <Label Grid.Row="1"  HorizontalOptions="Center" Text="Bienvenidos al FoodCourt " FontSize="Medium" TextColor="White"/>
+            <Label Grid.Row="1"  HorizontalOptions="Center" Text="Bienvenidos al FoodCourt " FontSize="Medium" TextColor="White" FontAttributes="Bold"/>
 
 
 
@@ -30,7 +30,7 @@
                 <StackLayout Orientation="Horizontal"/>
                 <Label Grid.Row="2" x:Name="label"  Text="Cantidad" TextColor="White" FontSize="16"/>
 
-                <Picker SelectedIndexChanged="Cantidad_SelectedIndexChanged"  x:Name="Cantidad" FontSize="Small" HorizontalOptions="FillAndExpand" TextColor="GhostWhite" Title="Cantidad">
+                <Picker SelectedIndexChanged="Cantidad_SelectedIndexChanged"  x:Name="Cantidad" FontSize="Small" HorizontalOptions="FillAndExpand" TextColor="GhostWhite" Title="Cantidad" TitleColor="GhostWhite">
 
                     <Picker.Items>
                         <x:String>1</x:String>
@@ -40,7 +40,7 @@
                 </Picker>
                 <Label Grid.Row="2" x:Name="label1"  Text="Elije el combo" TextColor="White" FontSize="16"/>
                 
-                <Picker  x:Name="combo" FontSize="Small" HorizontalOptions="FillAndExpand" TextColor="GhostWhite" Title="Selecione Combo 1">
+                <Picker  x:Name="combo" FontSize="Small" HorizontalOptions="FillAndExpand" TextColor="GhostWhite" Title="Selecione Combo 1" TitleColor="GhostWhite">
 
                     <Picker.Items>
                         <x:String>Combo 1</x:String>
@@ -49,7 +49,7 @@
                        
                     </Picker.Items>
                 </Picker>
-                <Picker  x:Name="combo2" FontSize="Small" HorizontalOptions="FillAndExpand" TextColor="GhostWhite" Title="Selecione Combo 2">
+                <Picker  x:Name="combo2" FontSize="Small" HorizontalOptions="FillAndExpand" TextColor="GhostWhite" Title="Selecione Combo 2" TitleColor="GhostWhite">
 
                     <Picker.Items>
                         <x:String>Combo 1</x:String>
@@ -59,7 +59,7 @@
                     </Picker.Items>
                 </Picker>
                 <Label Grid.Row="4"  Text="Extras" TextColor="White" FontSize="16"/>
-                <Picker Title="Bebidas"  x:Name="Bebidas" FontSize="Small" HorizontalOptions="FillAndExpand" TextColor="GhostWhite" >
+                <Picker Title="Bebidas"  x:Name="Bebidas" FontSize="Small" HorizontalOptions="FillAndExpand" TextColor="GhostWhite" TitleColor="GhostWhite" >
                     <Picker.Items>
                         <x:String>Ninguno</x:String>
                         <x:String>Coca Cola 12 Onz</x:String>
@@ -69,7 +69,7 @@
 
                     </Picker.Items>
                 </Picker>
-                <Picker Title="Snacks" x:Name="snacks" FontSize="Small" HorizontalOptions="FillAndExpand" TextColor="GhostWhite" >
+                <Picker Title="Snacks" x:Name="snacks" FontSize="Small" HorizontalOptions="FillAndExpand" TextColor="GhostWhite" TitleColor="GhostWhite">
                     <Picker.Items>
                         <x:String>Ninguno</x:String>
                         <x:String>Chocolate</x:String>
@@ -78,7 +78,7 @@
                     </Picker.Items>
                 </Picker>
 
-                <Picker Title="Extras" x:Name="Extras" FontSize="Small" HorizontalOptions="FillAndExpand" TextColor="GhostWhite" >
+                <Picker Title="Extras" x:Name="Extras" FontSize="Small" HorizontalOptions="FillAndExpand" TextColor="GhostWhite" TitleColor="GhostWhite">
                     <Picker.Items>
                         <x:String>Ninguno</x:String>
                         <x:String>Hotdog</x:String>
