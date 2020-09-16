@@ -33,6 +33,7 @@
                 <Picker SelectedIndexChanged="Cantidad_SelectedIndexChanged"  x:Name="Cantidad" FontSize="Small" HorizontalOptions="FillAndExpand" TextColor="GhostWhite" Title="Cantidad">
 
                     <Picker.Items>
+                        <x:String>0</x:String>
                         <x:String>1</x:String>
                         <x:String>2</x:String>
                        
@@ -43,6 +44,7 @@
                 <Picker  x:Name="combo" FontSize="Small" HorizontalOptions="FillAndExpand" TextColor="GhostWhite" Title="Selecione Combo 1">
 
                     <Picker.Items>
+                        <x:String>Ninguno</x:String>
                         <x:String>Combo 1</x:String>
                         <x:String>Combo 2</x:String>
                         <x:String>Combo 3</x:String>
@@ -52,6 +54,7 @@
                 <Picker  x:Name="combo2" FontSize="Small" HorizontalOptions="FillAndExpand" TextColor="GhostWhite" Title="Selecione Combo 2">
 
                     <Picker.Items>
+                        <x:String>Ninguno</x:String>
                         <x:String>Combo 1</x:String>
                         <x:String>Combo 2</x:String>
                         <x:String>Combo 3</x:String>
@@ -62,28 +65,28 @@
                 <Picker Title="Bebidas"  x:Name="Bebidas" FontSize="Small" HorizontalOptions="FillAndExpand" TextColor="GhostWhite" >
                     <Picker.Items>
                         <x:String>Ninguno</x:String>
-                        <x:String>Coca Cola 12 Onz</x:String>
-                        <x:String>Pepsi 12 Onz</x:String>
-                        <x:String>Sprite 12 Onz</x:String>
-                        <x:String>Agua 12 Onz</x:String>                        
+                        <x:String>Coca Cola 12 Onz Lps. 24.00</x:String>
+                        <x:String>Pepsi 12 Onz Lps. 20.00</x:String>
+                        <x:String>Sprite 12 Onz Lps. 15.00</x:String>
+                        <x:String>Agua 12 Onz Lps. 15.00</x:String>                        
 
                     </Picker.Items>
                 </Picker>
                 <Picker Title="Snacks" x:Name="snacks" FontSize="Small" HorizontalOptions="FillAndExpand" TextColor="GhostWhite" >
                     <Picker.Items>
                         <x:String>Ninguno</x:String>
-                        <x:String>Chocolate</x:String>
-                        <x:String>Porcion de Pizza</x:String>
-                        <x:String>Palomitas</x:String>
+                        <x:String>Chocolate Lps. 15.00</x:String>
+                        <x:String>Porcion de Pizza Lps. 20.00</x:String>
+                        <x:String>Palomitas Lps. 35.00</x:String>
                     </Picker.Items>
                 </Picker>
 
                 <Picker Title="Extras" x:Name="Extras" FontSize="Small" HorizontalOptions="FillAndExpand" TextColor="GhostWhite" >
                     <Picker.Items>
                         <x:String>Ninguno</x:String>
-                        <x:String>Hotdog</x:String>
-                        <x:String>Orden de Papas 12 Onz</x:String>
-                        <x:String>Hamburguesa</x:String>
+                        <x:String>Hotdog Lps. 30.00</x:String>
+                        <x:String>Orden de Papas Lps. 20.00</x:String>
+                        <x:String>Hamburguesa Lps. 50.00</x:String>
 
                     </Picker.Items>
                 </Picker>

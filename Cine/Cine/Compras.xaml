@@ -148,7 +148,7 @@
                         <x:String>C-20</x:String>
                     </Picker.Items>
                 </Picker>
-                <Button x:Name ="entrar" Text="Comprar" BackgroundColor="#c56f82" CornerRadius="5" TextColor="WhiteSmoke" FontSize="18" Clicked="entrar_Clicked"/>
+                <Button x:Name ="entrar" Text="Comprar Boleto" BackgroundColor="#c56f82" CornerRadius="5" TextColor="WhiteSmoke" FontSize="18" Clicked="entrar_Clicked"/>
 
             </StackLayout>
         </Grid>

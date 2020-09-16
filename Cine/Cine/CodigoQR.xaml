@@ -7,6 +7,7 @@
              x:Class="Cine.CodigoQR"             
              BackgroundColor="#54687a">
     <StackLayout x:Name="qr">
+        <Button  x:Name="Guardar" Text="Regresar Al menu" BackgroundColor="#c56f82" CornerRadius="5" TextColor="WhiteSmoke" FontSize="18" Clicked="Guardar_Clicked"/>
         
     </StackLayout>
     

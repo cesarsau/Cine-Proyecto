@@ -13,9 +13,19 @@ namespace Cine
 
     public partial class Registro : ContentPage
     {
-        public Registro()
+        public Registro(double total)
         {
             InitializeComponent();
+            Total.Text ="Total a Pagar: Lps."+ total.ToString();
+
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            
+            
+           
+            this.Navigation.PushModalAsync(new Foodcort());
         }
     }
 }

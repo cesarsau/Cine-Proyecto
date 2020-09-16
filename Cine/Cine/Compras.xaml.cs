@@ -133,7 +133,14 @@ namespace Cine
             }
             else
             {
-                DisplayAlert("¡Gracias Por su Compra!", "Esperamos los disfrutes", "Aceptar");
+                double precio = 120.00;
+                if(Asiento2.IsVisible=true && Asiento2.SelectedIndex==1)
+                {
+                    precio = precio * 2;
+                }
+
+                
+                this.Navigation.PushModalAsync(new Facturacion(precio));
             }
         }
 

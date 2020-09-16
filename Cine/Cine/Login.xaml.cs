@@ -23,7 +23,7 @@ public partial class Login : ContentPage
 
         private void btnclick2_Clicked(object sender, EventArgs e)
         {
-           this.Navigation.PushModalAsync(new Registro());
+           
         }
     }
 }
