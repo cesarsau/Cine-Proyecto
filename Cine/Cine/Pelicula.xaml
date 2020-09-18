@@ -6,15 +6,16 @@
              mc:Ignorable="d"
              x:Class="Cine.Pelicula"
              BackgroundColor="#54687a">
-    
-    <CollectionView ItemsSource="{Binding Peliculas}" BackgroundColor="#54687a" Opacity="0.9">
+    <StackLayout x:Name="loya">
+    <Label x:Name="LblNoInternet" HorizontalTextAlignment="Center" TextColor="White" BackgroundColor="Red"/>
+
+    <CollectionView x:Name="lista" ItemsSource="{Binding Peliculas}" BackgroundColor="#54687a" Opacity="0.9">
         <CollectionView.ItemTemplate BackgroundColor="#54687a" >
             <DataTemplate >
-                <Frame BackgroundColor="#54687a" Padding="8"
+                <Frame x:Name="frame" BackgroundColor="#54687a" Padding="8"
                        CornerRadius="5"
-                       IsClippedToBounds="True"
                        BorderColor="LightBlue" >
-                    <Grid HeightRequest="100" BackgroundColor="#54687a" >
+                    <Grid x:Name="grid" HeightRequest="100" BackgroundColor="#54687a" >
                         <Grid.ColumnDefinitions BackgroundColor="#54687a">
                             <ColumnDefinition Width=".3*"/>
                             <ColumnDefinition Width=".7*"/> 
@@ -23,8 +24,8 @@
                             <RowDefinition Height=".5*"/>
                             <RowDefinition Height=".5*"/>
                         </Grid.RowDefinitions>
-                        <ImageButton x:Name="btn1" BackgroundColor="#54687a" Grid.RowSpan="3" Source="{Binding Imagen}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  ></ImageButton>
-                        <Label x:Name="Nombre" Text="{Binding Nombre}" Grid.Column="1" FontAttributes="Bold" FontSize="Medium" TextColor="White" TextType="Html"></Label>
+                        <ImageButton Clicked="btn1_Clicked"  x:Name="btn1" BackgroundColor="#54687a" Grid.RowSpan="3" Source="{Binding Imagen}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  ></ImageButton>
+                        <Label Text="{Binding Nombre}" Grid.Column="1" FontAttributes="Bold" FontSize="Medium" TextColor="White" TextType="Html"></Label>
                         <Label Grid.Row="1" Grid.Column="1" FontSize="Medium" Text="{Binding Año}" TextColor="White"></Label>
                         <Label Grid.Row="2" Grid.Column="1" FontSize="Small" Text="{Binding Categoria}" TextColor="White"></Label>
                         
@@ -35,5 +36,5 @@
             </DataTemplate>
         </CollectionView.ItemTemplate>
     </CollectionView>
-   
+        </StackLayout>
 </ContentPage>

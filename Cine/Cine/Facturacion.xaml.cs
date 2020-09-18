@@ -15,7 +15,8 @@ namespace Cine
         public Facturacion(double total)
         {
             InitializeComponent();
-            Total.Text = "Lps. "+total.ToString();            
+            Total.Text = "Lps. "+total.ToString();
+            gif.IsVisible = false;
         }
 
       
@@ -39,7 +40,16 @@ namespace Cine
                     token.Append(alfabeto[indice]);
 
                 }
-                this.Navigation.PushModalAsync(new CodigoQR(token.ToString()));
+                if (tarjeta.Text=="4214 4214 4214 4214"&&fecha.Text=="12/21"&&codigo.Text=="426")
+                {
+                    gif.IsVisible = true;
+                    System.Threading.Thread.Sleep(10000);                    
+                    this.Navigation.PushModalAsync(new CodigoQR(token.ToString()));
+                }
+                else
+                {
+                    DisplayAlert("Atencion","Tarjeta Invalida","Reintentar");
+                }                
             }
             
         }

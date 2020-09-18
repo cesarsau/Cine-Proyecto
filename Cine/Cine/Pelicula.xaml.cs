@@ -20,8 +20,21 @@ namespace Cine
 
             InitializeComponent();
             BindingContext = new Peliculasviewmodels();
+            Init();
+
+            
         }
 
-        
+        void Init()
+        {
+            App.StartCheckIfInternet(LblNoInternet, this);
+           
+        }
+
+        [Obsolete]
+        private void btn1_Clicked(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
