@@ -1,14 +1,5 @@
-﻿using Cine.Data;
-using Cine.Models;
-using Cine.ViewModels;
-using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Text;
+﻿using System;
 using System.Threading;
-using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using static Java.Util.Jar.Attributes;
@@ -18,6 +9,8 @@ namespace Cine
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Compras : ContentPage
     {
+        private Timer timer;
+
         public Compras()
         {
             InitializeComponent();

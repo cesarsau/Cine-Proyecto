@@ -15,6 +15,8 @@ namespace Cine
         private static Page CurrentPage;
         private static Timer timer;
         private static bool NoInterShow;
+        private static Button ButtonScreen;
+
         public App()
         {
             InitializeComponent();
@@ -96,9 +98,9 @@ namespace Cine
                 {
                     await ShowDisplayAlert();
                 }
-                return false;
+                return await Task.FromResult<bool>(false);
             }
-            return true;
+            return await Task.FromResult<bool>(true);
         }
 
         public static async Task ShowDisplayAlert()
