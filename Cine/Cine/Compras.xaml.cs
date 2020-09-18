@@ -9,6 +9,7 @@ namespace Cine
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Compras : ContentPage
     {
+
         public Compras()
         {
             InitializeComponent();

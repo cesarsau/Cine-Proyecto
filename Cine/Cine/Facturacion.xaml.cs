@@ -16,7 +16,7 @@ namespace Cine
         {
             InitializeComponent();
             Total.Text = "Lps. "+total.ToString();
-            gif.IsVisible = false;
+            
         }
 
       
@@ -42,8 +42,9 @@ namespace Cine
                 }
                 if (tarjeta.Text=="4214 4214 4214 4214"&&fecha.Text=="12/21"&&codigo.Text=="426")
                 {
-                    gif.IsVisible = true;
-                    System.Threading.Thread.Sleep(10000);                    
+                    
+                    System.Threading.Thread.Sleep(10000);
+                    Pagar.IsVisible = false;
                     this.Navigation.PushModalAsync(new CodigoQR(token.ToString()));
                 }
                 else
