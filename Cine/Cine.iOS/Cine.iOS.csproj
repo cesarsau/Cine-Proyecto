@@ -176,4 +176,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\tormento.JPG" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\profile.png" />
+  </ItemGroup>
 </Project>

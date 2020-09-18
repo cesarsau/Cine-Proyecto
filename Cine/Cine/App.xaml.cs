@@ -15,7 +15,6 @@ namespace Cine
         private static Page CurrentPage;
         private static Timer timer;
         private static bool NoInterShow;
-        private static Button ButtonScreen;
 
         public App()
         {

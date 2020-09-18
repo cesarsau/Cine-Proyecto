@@ -1,4 +1,5 @@
 ﻿using Cine.ViewModels;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -23,10 +24,9 @@ namespace Cine
            
         }
 
-        [Obsolete]
         private void btn1_Clicked(object sender, EventArgs e)
         {
-            
+           
         }
     }
 }

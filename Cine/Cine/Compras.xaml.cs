@@ -9,8 +9,6 @@ namespace Cine
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Compras : ContentPage
     {
-        private Timer timer;
-
         public Compras()
         {
             InitializeComponent();
