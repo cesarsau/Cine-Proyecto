@@ -6,10 +6,8 @@
              mc:Ignorable="d"
              x:Class="Cine.Pelicula"
              BackgroundColor="#54687a">
-
-    <StackLayout>
-        <Label x:Name="LblNoInternet" HorizontalTextAlignment="Center" TextColor="White" BackgroundColor="Red"/>
-        <CollectionView ItemsSource="{Binding Peliculas}" BackgroundColor="#54687a" Opacity="0.9">
+    
+    <CollectionView ItemsSource="{Binding Peliculas}" BackgroundColor="#54687a" Opacity="0.9">
         <CollectionView.ItemTemplate BackgroundColor="#54687a" >
             <DataTemplate >
                 <Frame BackgroundColor="#54687a" Padding="8"
@@ -37,6 +35,5 @@
             </DataTemplate>
         </CollectionView.ItemTemplate>
     </CollectionView>
-    </StackLayout>
    
 </ContentPage>

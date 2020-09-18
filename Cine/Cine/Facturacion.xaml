@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:fastEntry="clr-namespace:XamarinFastEntrySample.FastEntry;assembly=XamarinFastEntry.Behaviors"
+             mc:Ignorable="d"
+             x:Class="Cine.Facturacion"
+             BackgroundColor="#54687a"
+             >
+    <ContentPage.Content>
+
+        <Grid>
+
+            <Image Source="fondosala.jpg"
+               HeightRequest="250" Aspect="AspectFill" Opacity="0.2"/>
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="1"  HorizontalOptions="Center" Text="Bienvenidos a Facturacion " FontSize="Medium" TextColor="White"/>
+
+
+
+                <StackLayout Grid.Row="1" Padding="15,10">
+                    <Grid Grid.RowSpan="7">
+                        <ListView x:Name="lista" Grid.RowSpan="7" >
+                            
+                        </ListView>
+                    </Grid>
+                    <Grid>
+                    </Grid>
+                    <Grid />
+                    <StackLayout Orientation="Horizontal"/>
+                    <Label HorizontalOptions="Center" Grid.Row="1" FontSize="18" Text="Facturacion" VerticalOptions="Center" TextColor="White" />
+                    <Label HorizontalOptions="Center" FontAttributes="Bold" TextColor="White" Grid.Row="2" Text="Total A Pagar" FontSize="18"></Label>
+                    <Label HorizontalOptions="Center" FontAttributes="Bold" TextColor="White" Grid.Row="3" x:Name="Total" FontSize="18"></Label>
+                    <Entry x:Name="Nombre" Grid.Row="4" PlaceholderColor="White" Placeholder="Nombre y Apellido" TextColor="White" FontSize="16" Keyboard="Text"/>
+                    <Entry x:Name="Correo" Grid.Row="5" PlaceholderColor="White" Placeholder="Correo Electronico" TextColor="White" FontSize="16" Keyboard="Email"/>
+                    <Entry x:Name="Direccion" Grid.Row="6" PlaceholderColor="White" Placeholder="Direccion" TextColor="White" FontSize="16" Keyboard="Text"/>
+                    <Entry x:Name="Telefono" Grid.Row="7" PlaceholderColor="White"  Placeholder="Telefono" TextColor="White" FontSize="16" Keyboard="Telephone"/>
+                    <Entry x:Name="tarjeta" Grid.Row="8" PlaceholderColor="White" Placeholder="xxxx-xxxx-xxxx-xxxx" TextColor="White" FontSize="16" Keyboard="Numeric">
+                        <Entry.Behaviors>
+                            <fastEntry:XamarinFastEntryBehaviour Mask="#### #### #### ####" MaxLength="19"/>
+                        </Entry.Behaviors> 
+                           
+                     </Entry>
+                    <Entry x:Name="fecha" Grid.Row="9" PlaceholderColor="White" Placeholder="Expira MM/YY" TextColor="White" FontSize="16" Keyboard="Numeric">
+                        <Entry.Behaviors>
+                            <fastEntry:XamarinFastEntryBehaviour Mask ="##/##" MaxLength="5"/>
+                        </Entry.Behaviors>
+
+                    </Entry>
+                    <Entry x:Name="codigo" PlaceholderColor="White" Grid.Row="10" Placeholder="Codigo CVV xxx" TextColor="White" FontSize="16" Keyboard="Numeric">
+                        <Entry.Behaviors>
+                            <fastEntry:XamarinFastEntryBehaviour Mask ="xxx" MaxLength="3"/>
+                        </Entry.Behaviors>
+                                                      
+                    </Entry>
+
+
+
+                        <Button Grid.Row="11" x:Name ="Pagar" Clicked="Pagar_Clicked_1" Text="Comprar" BackgroundColor="#c56f82" CornerRadius="5" TextColor="WhiteSmoke" FontSize="18" />
+
+                </StackLayout>
+
+            </Grid>
+
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>
