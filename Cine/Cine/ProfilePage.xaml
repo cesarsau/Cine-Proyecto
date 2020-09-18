@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Cine.ProfilePage"
+             BackgroundColor="#54687a">
+
+    <Grid>
+
+        <Image Source="fondosala.jpg" HeightRequest="250" Aspect="AspectFill" Opacity="0.2"/>
+        <StackLayout>
+            <Image Source="profile.png" HeightRequest="150" WidthRequest="100"  Margin="0,35,0,0"/>
+            <Label Text="Fake User" TextColor="GhostWhite" FontAttributes="Bold" HorizontalOptions="Center" FontSize="Title"/>
+            <Label Text="San Pedro Sula, Cortes" TextColor="White" HorizontalOptions="Center" FontSize="Subtitle" />
+            <Grid Margin="35,35,20,0" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <Label Text="example@example.com" FontSize="Body" TextColor="GhostWhite"  HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Label Grid.Column="1" Text="98882550" FontSize="Body" TextColor="GhostWhite" HorizontalOptions="Center" VerticalOptions="Center"/>
+            </Grid>
+
+            <Label Text="Sobre Ti" FontSize="Title" TextColor="GhostWhite" Margin="35,0,0,0"/>
+            <Label Text="Favoritos" TextColor="GhostWhite" FontSize="Subtitle" Margin="50,0,10,10" />
+            <Grid VerticalOptions="FillAndExpand" Margin="35,0,20,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Frame Grid.Column="0" HasShadow="True" BackgroundColor="IndianRed" HorizontalOptions="FillAndExpand" Opacity="0.45" >
+                    <Label Grid.Column="0" Text="Terror" TextColor="GhostWhite" FontSize="Body" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold"/>
+                </Frame>
+                <Frame Grid.Column="1" HasShadow="True" BackgroundColor="IndianRed" Opacity="0.45" HorizontalOptions="FillAndExpand">
+                    <Label Grid.Column="0" Text="Comedia" TextColor="GhostWhite" FontSize="Body" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold"/>
+                </Frame>
+                <Frame Grid.Column="2" HasShadow="True" BackgroundColor="IndianRed" Opacity="0.45" HorizontalOptions="FillAndExpand">
+                    <Label Grid.Column="0" Text="Accion" TextColor="GhostWhite" FontSize="Body" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold"/>
+                </Frame>
+                <Label Grid.Row="1" Grid.ColumnSpan="3" Text="Soy un amante de las peliculas, en mis tiempos libres ver peliculas es mi primer opcion para pasar el rato, salgo al cine a vivir un buen momento junto con mi familia"
+                       TextColor="GhostWhite" FontSize="Body"/>
+            </Grid>
+            <Button Clicked="LogoutClicked" Text="Logout" TextColor="GhostWhite" BackgroundColor="IndianRed" VerticalOptions="EndAndExpand"  />
+        </StackLayout>
+    </Grid>
+</ContentPage>

@@ -26,9 +26,9 @@
 
                 <StackLayout Grid.Row="1" Padding="30,20">
                     
-                    <Entry  Placeholder="&#xE800; Correo electronico" PlaceholderColor="WhiteSmoke" TextColor="White" Keyboard="Email"/>
-                    <Entry  Placeholder="&#xE801; Contraseña" PlaceholderColor="WhiteSmoke" IsPassword="True" TextColor="White"/>
-                    <Button x:Name ="entrar" Text="Ingresar" BackgroundColor="#c56f82" CornerRadius="5" TextColor="WhiteSmoke" FontSize="18"/>
+                    <Entry  x:Name="email" Placeholder="&#xE800; Correo electronico" PlaceholderColor="WhiteSmoke" TextColor="White" Keyboard="Email"/>
+                    <Entry  x:Name="Password"  Placeholder="&#xE801; Contraseña" PlaceholderColor="WhiteSmoke" IsPassword="True" TextColor="White"/>
+                    <Button x:Name ="LoginIn" Text="Ingresar" BackgroundColor="#c56f82" CornerRadius="5" TextColor="WhiteSmoke" FontSize="18" Clicked="StartLoginIn"/>
                                        
                     <Grid >                        
                     </Grid>

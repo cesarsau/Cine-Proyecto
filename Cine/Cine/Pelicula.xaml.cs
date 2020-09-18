@@ -24,10 +24,9 @@ namespace Cine
            
         }
 
-        [Obsolete]
         private void btn1_Clicked(object sender, EventArgs e)
         {
-            
+           
         }
     }
 }
