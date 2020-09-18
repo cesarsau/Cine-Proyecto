@@ -16,6 +16,11 @@ namespace Cine
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
+            Init();
+        }
+
+        void Init()
+        {
         }
     }
 }

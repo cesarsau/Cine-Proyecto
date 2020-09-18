@@ -15,10 +15,11 @@ namespace Cine
         private static Page CurrentPage;
         private static Timer timer;
         private static bool NoInterShow;
+        private static Button ButtonScreen;
+
         public App()
         {
             InitializeComponent();
-
             MainPage = new NavigationPage(new TabbedPage1());
             MainPage.SetValue(NavigationPage.BarBackgroundColorProperty, Color.White);
         }
@@ -41,7 +42,6 @@ namespace Cine
             label.Text = Constants.NoInternetText;
             label.IsVisible = true;
             HashInternet = true;
-            
             CurrentPage = page;
             if (timer == null)
             {
@@ -52,7 +52,7 @@ namespace Cine
             }
         }
 
-        private static void CheckIfInternetOverTime()
+        public static void CheckIfInternetOverTime()
         {
             var NetworkConnection = DependencyService.Get<INetworkConnection>();
             NetworkConnection.CheckNetworkConnection();
@@ -81,7 +81,7 @@ namespace Cine
             }
         }
 
-        public static async Task<bool> CheckIfInternet()
+        public static bool CheckIfInternet()
         {
             var NetworkConnection = DependencyService.Get<INetworkConnection>();
             NetworkConnection.CheckNetworkConnection();
@@ -98,15 +98,15 @@ namespace Cine
                 {
                     await ShowDisplayAlert();
                 }
-                return false;
+                return await Task.FromResult<bool>(false);
             }
-            return true;
+            return await Task.FromResult<bool>(true);
         }
 
-        private static async Task ShowDisplayAlert()
+        public static async Task ShowDisplayAlert()
         {
             NoInterShow = false;
-            await CurrentPage.DisplayAlert("Internet", "El dispositivo no esta conectado a Internet, Por favor haga la reconexion", "Aceptar");
+            await CurrentPage.DisplayAlert("Internet", "Device has no Internet, please reconnect", "Okay");
         }
     }
 }
