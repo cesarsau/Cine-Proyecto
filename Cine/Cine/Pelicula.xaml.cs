@@ -1,4 +1,5 @@
 ﻿using Cine.ViewModels;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 

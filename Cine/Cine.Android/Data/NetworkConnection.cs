@@ -12,6 +12,7 @@ namespace Cine.Droid
     {
         public bool IsConnected { get; set; }
 
+        [System.Obsolete]
         public void CheckNetworkConnection()
         {
             var ConnectivityManager = (ConnectivityManager)Application.Context.GetSystemService(Context.ConnectivityService);

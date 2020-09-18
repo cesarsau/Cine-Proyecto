@@ -25,6 +25,7 @@
                 
                 <StackLayout Grid.Row="1" Padding="15,10">
                     <Grid Grid.RowSpan="7">
+                        
                         <ListView x:Name="lista" Grid.RowSpan="7" >
                             
                         </ListView>
@@ -34,7 +35,6 @@
                     <Grid />
                     <StackLayout Orientation="Horizontal"/>
                     <Label HorizontalOptions="Center" Grid.Row="1" FontSize="18" Text="Facturacion" VerticalOptions="Center" TextColor="White" />
-                    <Image x:Name="gif" Source="espere.gif" IsAnimationPlaying="True" />
                     <Label HorizontalOptions="Center" FontAttributes="Bold" TextColor="White" Grid.Row="2" Text="Total A Pagar" FontSize="18"></Label>
                     <Label HorizontalOptions="Center" FontAttributes="Bold" TextColor="White" Grid.Row="3" x:Name="Total" FontSize="18"></Label>
                     <Entry x:Name="Nombre" Grid.Row="4" PlaceholderColor="White" Placeholder="Nombre y Apellido" TextColor="White" FontSize="16" Keyboard="Text"/>
@@ -63,7 +63,7 @@
 
 
                         <Button Grid.Row="11" x:Name ="Pagar" Clicked="Pagar_Clicked_1" Text="Comprar" BackgroundColor="#c56f82" CornerRadius="5" TextColor="WhiteSmoke" FontSize="18" />
-                    
+                       
                 </StackLayout>
 
             </Grid>
