@@ -29,9 +29,8 @@
                         <Label x:Name="comida" Text="{Binding comida}" TextColor="White" Grid.ColumnSpan="14" Grid.RowSpan="7" Grid.Column="0" Grid.Row="0"></Label>
                         <Label Text="{Binding precio, StringFormat='{0:C}'}" TextColor="White" Grid.ColumnSpan="7" Grid.RowSpan="2" Grid.Column="11" Grid.Row="0"></Label>
                         <ImageButton x:Name="boton" Clicked="boton_Clicked"  Grid.ColumnSpan="12" Grid.RowSpan="12" Grid.Column="3" Grid.Row="3" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Blue" Source="{Binding imagen}"  ></ImageButton>
-                        
-                    </Grid>
 
+                    </Grid>
                 </Frame>
             </DataTemplate>            
         </CollectionView.ItemTemplate>
