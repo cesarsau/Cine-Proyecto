@@ -48,13 +48,14 @@ namespace Cine
 
         private async void Guardar_Clicked(object sender, EventArgs e)
         {
-			bool bnt= await DisplayAlert("¿Salir?", "Guarde los datos o se perderan", "Si", "No");
+			bool bnt= await DisplayAlert("¿Salir?", "¿Desea guardar los datos? Sino se perderan", "Si", "No");
 
-			if (bnt == true)
+			if (bnt)
 			{
                 await this.Navigation.PushModalAsync(new TabbedPage1());
 				IsVisible=false;
 			}
+            else { await DisplayAlert("Informacion", "No se guardaron los datos, intente de nuevo", "Okay"); }
 		}
     }		
     
