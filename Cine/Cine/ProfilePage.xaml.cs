@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cine.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,10 +18,19 @@ namespace Cine
         {
             NavigationPage.SetHasNavigationBar(this, false);
             InitializeComponent();
+            BindingContext = new Validarviewmodels();
         }
-        private void LogoutClicked(object sender, EventArgs e)
+        private async void LogoutClicked(object sender, EventArgs e)
         {
-            this.Navigation.PushModalAsync(new TabbedPage1());
+            var answer = await DisplayAlert("Salir", "¿Desea Salir?", "Si", "No");
+            if (answer)
+            {
+                await Navigation.PushAsync(new Login());
+            }
+            else
+            {
+               
+            }
         }
     }
 }
