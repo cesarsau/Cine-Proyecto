@@ -39,6 +39,10 @@ public partial class Login : ContentPage
 
                 await Navigation.PushAsync(new ProfilePage());
             }
+            else
+            {
+                DisplayAlert("Error","Correo y/o contraseña incorrecta ","Reintentar");
+            }
             }
     }
 }
