@@ -32,16 +32,16 @@
                 <Picker SelectedIndexChanged="Listado_SelectedIndexChanged" x:Name="Listado" FontSize="Small" HorizontalOptions="FillAndExpand" TextColor="GhostWhite" Title="Selecione Pelicula" TitleColor="GhostWhite">
 
                     <Picker.Items>
-                        <x:String>El Enemigo Invisible</x:String>
-                        <x:String>El Valor Del Trigo</x:String>
-                        <x:String>La Sirena</x:String>
-                        <x:String>El Beso</x:String>
-                        <x:String>Erase Un Tonto</x:String>
-                        <x:String>Amantes</x:String>
-                        <x:String>Tormento</x:String>
-                        <x:String>La Pantera Rosa</x:String>
-                        <x:String>Charlot, Artista De Cine</x:String>
-                        <x:String>Fuego</x:String>
+                        <x:String>Mujer Maravilla</x:String>
+                        <x:String>Mision Rescate</x:String>
+                        <x:String>Malefica</x:String>
+                        <x:String>Avenger End Game</x:String>
+                        <x:String>John Wick 3</x:String>
+                        <x:String>El Rey Leon</x:String>
+                        <x:String>Mulan</x:String>
+                        <x:String>Animales Fantasticos</x:String>
+                        <x:String>Jocker</x:String>
+                        <x:String>El tunel</x:String>
                     </Picker.Items>
                 </Picker>
                 <Label Grid.Row="2"  Text="Fecha" TextColor="White" FontSize="16"/>

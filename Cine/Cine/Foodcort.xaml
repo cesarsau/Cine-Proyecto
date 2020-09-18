@@ -45,9 +45,9 @@
 
                     <Picker.Items>
                         <x:String>Ninguno</x:String>
-                        <x:String>Combo 1</x:String>
-                        <x:String>Combo 2</x:String>
-                        <x:String>Combo 3</x:String>
+                        <x:String>Combo 1 Lps. 135.5</x:String>
+                        <x:String>Combo 2 Lps. 155.5</x:String>
+                        <x:String>Combo 3 Lps. 85.5</x:String>
                        
                     </Picker.Items>
                 </Picker>
@@ -55,9 +55,9 @@
 
                     <Picker.Items>
                         <x:String>Ninguno</x:String>
-                        <x:String>Combo 1</x:String>
-                        <x:String>Combo 2</x:String>
-                        <x:String>Combo 3</x:String>
+                        <x:String>Combo 1 Lps. 135.5</x:String>
+                        <x:String>Combo 2 Lps. 155.5</x:String>
+                        <x:String>Combo 3 Lps. 85.5</x:String>
 
                     </Picker.Items>
                 </Picker>

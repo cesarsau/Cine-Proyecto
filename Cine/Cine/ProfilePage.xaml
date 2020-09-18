@@ -2,23 +2,22 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Cine.ProfilePage"
-             BackgroundColor="#54687a"
-             BindingContext="{Binding Validar}">
+             BackgroundColor="#54687a">
     
     <Grid >
 
         <Image Source="fondosala.jpg" HeightRequest="250" Aspect="AspectFill" Opacity="0.2"/>
         <ScrollView >
             <StackLayout  >
-            <Image Source="profile.png" HeightRequest="150" WidthRequest="100"  Margin="0,35,0,0"/>
-            <Label x:Name="Nombre" BindingContext="{Binding Validar}" Text="{Binding Nombre}" TextColor="GhostWhite" FontAttributes="Bold" HorizontalOptions="Center" FontSize="Title"/>
-             <Label x:Name="Direccion" BindingContext="{Binding Validar}" Text="{Binding Direccion}" TextColor="White" HorizontalOptions="Center" FontSize="Subtitle" />
+            <ImageButton IsEnabled="True" CornerRadius="40" Source="images.jpg" HeightRequest="100" WidthRequest="100" VerticalOptions="Center" HorizontalOptions="Center"  Margin="0,15,0,0"/>
+            <Label x:Name="Nombre"  Text="Cesar Sauceda" TextColor="GhostWhite" FontAttributes="Bold" HorizontalOptions="Center" FontSize="Title"/>
+             <Label x:Name="Direccion"  Text="San Pedro Sula, Cortes" TextColor="White" HorizontalOptions="Center" FontSize="Subtitle" />
             <Grid Margin="35,35,20,0" >
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="100"/>
                 </Grid.RowDefinitions>
-                <Label x:Name="Correo" Text="{Binding Correo}" FontSize="Body" TextColor="GhostWhite"  HorizontalOptions="Center" VerticalOptions="Center"/>
-                <Label x:Name="Telefono" Grid.Column="1" Text="{Binding Telefono}" FontSize="Body" TextColor="GhostWhite" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Label x:Name="Correo" Text="Cesarsauceda@unitec.edu" Grid.RowSpan="1" Grid.ColumnSpan="2" FontSize="Body" TextColor="GhostWhite"  HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Label x:Name="Telefono" Grid.Column="2" Text="96392673" FontSize="Body" TextColor="GhostWhite" HorizontalOptions="Center" VerticalOptions="Center"/>
             </Grid>
 
             <Label x:Name="sobre" Text="Sobre ti" FontSize="Title" TextColor="GhostWhite" Margin="35,0,0,0"/>
@@ -33,16 +32,16 @@
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                    <Frame BindingContext="{Binding Validar}" Grid.Column="0" HasShadow="True" BackgroundColor="IndianRed" HorizontalOptions="FillAndExpand" Opacity="0.45" >
-                    <Label x:Name="opcion1" Grid.Column="0" Text="{Binding opcion1}" TextColor="GhostWhite" FontSize="Body" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold"/>
+                    <Frame Grid.Column="0" HasShadow="True" BackgroundColor="IndianRed" HorizontalOptions="FillAndExpand" Opacity="0.45" >
+                    <Label x:Name="opcion1" Grid.Column="0" Text="Comedia" TextColor="GhostWhite" FontSize="Body" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold"/>
                 </Frame>
-                    <Frame BindingContext="{Binding Validar}" Grid.Column="1" HasShadow="True" BackgroundColor="IndianRed" Opacity="0.45" HorizontalOptions="FillAndExpand">
-                        <Label x:Name="opcion2" Grid.Column="0" Text="{Binding opcion2}" TextColor="GhostWhite"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold"/>
+                    <Frame Grid.Column="1" HasShadow="True" BackgroundColor="IndianRed" Opacity="0.45" HorizontalOptions="FillAndExpand">
+                        <Label x:Name="opcion2" Grid.Column="0" Text="Accion" TextColor="GhostWhite"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold"/>
                 </Frame>
-                    <Frame BindingContext="{Binding Validar}" Grid.Column="2" HasShadow="True" BackgroundColor="IndianRed" Opacity="0.45" HorizontalOptions="FillAndExpand">
-                        <Label x:Name="opcion3" Grid.Column="0" Text="{Binding opcion3}" TextColor="GhostWhite" FontSize="Body" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold"/>
+                    <Frame Grid.Column="2" HasShadow="True" BackgroundColor="IndianRed" Opacity="0.45" HorizontalOptions="FillAndExpand">
+                        <Label x:Name="opcion3" Grid.Column="0" Text="Drama" TextColor="GhostWhite" FontSize="Body" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold"/>
                 </Frame>
-                    <Label x:Name="Reseña" Grid.Row="1" Grid.ColumnSpan="3" Text="{Binding Sobre}"
+                    <Label x:Name="Reseña" Grid.Row="1" Grid.ColumnSpan="3" Text="Ver peliculas seria mi pasatiempo si tuviera tiempo para uno"
                        TextColor="GhostWhite" FontSize="Body"/>
             </Grid>
             <Button Clicked="LogoutClicked" Text="Salir" TextColor="GhostWhite" BackgroundColor="IndianRed" VerticalOptions="EndAndExpand"  />

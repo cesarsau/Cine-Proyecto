@@ -34,8 +34,9 @@ public partial class Login : ContentPage
             var Email = email.Text;
             var password = Password.Text;
 
-            if (Email.Equals("example@example.com") && password.Equals("123"))
+            if (Email.Equals("cesarsauceda@unitec.com") && password.Equals("123456"))
             {
+
                 await Navigation.PushAsync(new ProfilePage());
             }
             }
