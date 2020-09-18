@@ -12,8 +12,10 @@ namespace Cine
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ProfilePage : ContentPage
     {
+
         public ProfilePage()
         {
+            NavigationPage.SetHasNavigationBar(this, false);
             InitializeComponent();
         }
         private void LogoutClicked(object sender, EventArgs e)

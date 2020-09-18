@@ -8,6 +8,8 @@ using Xamarin.Forms.Xaml;
 
 namespace Cine
 {
+    
+
     public partial class App : Application
     {
         private static Label LabelScreen;

@@ -13,6 +13,4 @@
     <Cine:Comidas IconImageSource="ic_comida.png" ></Cine:Comidas>
     <Cine:Compras IconImageSource="ic_buy.png"  ></Cine:Compras>
     <Cine:Sillas IconImageSource="ic_silla.png"  ></Cine:Sillas>
-    <Cine:Login IconImageSource="ic_login.png"  ></Cine:Login>
-    
 </TabbedPage>

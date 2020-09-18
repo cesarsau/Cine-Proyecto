@@ -14,12 +14,14 @@ namespace Cine
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 public partial class Login : ContentPage
 {
+        
+        
     public Login()
     {
         InitializeComponent();
         btnclick2.Clicked += btnclick2_Clicked;
-        
-            
+            NavigationPage.SetHasNavigationBar(this, false);
+
         }
 
         private void btnclick2_Clicked(object sender, EventArgs e)
@@ -27,17 +29,15 @@ public partial class Login : ContentPage
            
         }
 
-        private void StartLoginIn(object sender, EventArgs e)
+        private async void StartLoginIn(object sender, EventArgs e)
         {
             var Email = email.Text;
             var password = Password.Text;
 
             if (Email.Equals("example@example.com") && password.Equals("123"))
             {
-                DisplayAlert("Login", "Login Success", "Okay");
-
-                Navigation.PushModalAsync(new ProfilePage());
+                await Navigation.PushAsync(new ProfilePage());
             }
-        }
+            }
     }
 }

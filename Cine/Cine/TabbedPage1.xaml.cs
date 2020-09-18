@@ -17,6 +17,10 @@ namespace Cine
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
             Init();
+            NavigationPage navigationPage = new NavigationPage(new Login());
+            navigationPage.IconImageSource = "ic_login.png";
+          
+            Children.Add(navigationPage);
         }
 
         void Init()
